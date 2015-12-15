@@ -29,4 +29,7 @@ Alternative version with GRIC-PELC based keyframe selection  and tracking approa
 	* 第一个只在`macosx`下才会出现因为`mac`下`opengl`的头文件和`linux`下不一样，如果在`linux`下没问题，如果是`mac`下自行修改头文件.(一般工程都会针对不同操作系统分开引头文件,作者太懒，考虑到连`CMakelists.txt`都懒得写就不多说了，不过源码注释是我看过的最人性化的，没有之一，那注释的**逼格**。。而且注释很丰富，基本每行都有，保证读者的理解)
 	* 在`multiview.cpp`第455行开始，把所有的`for循环`中用到的迭代器变量`t`改为`i`，否则与后面的rt矩阵的`t`矩阵变量名重复，导致编译错误
 	* 从官网上下载的`xml配置文件`，格式有错误需要在`文件头`上加xml格式标识`<?xml version="1.0"?>`，否则程序无法正确读取相机的标定参数矩阵
+
+##Contact Me
+**@bluking** <buqing2009@gmail.com>
  
